@@ -10,3 +10,5 @@ plugins/sfGuardPlugin/lib/model/map/*
 plugins/sfGuardPlugin/lib/form/base/*
 plugins/sfGuardPlugin/lib/filter/base/*
 web/uploads/*
+data/sql/*.schema.sql
+data/sql/sqldb.map
