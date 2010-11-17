@@ -16,7 +16,7 @@ generator:
       fields:  ~
       list:
         title: Students
-        sort: [[last_name, asc], [first_name, asc]]
+        sort: [last_name, asc]
         display: [=last_name, first_name, number, group_id]
         object_actions:
           _edit:
