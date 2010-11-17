@@ -16,6 +16,19 @@
  *
  * @package    lib.model
  */
-class StudentPeer extends BaseStudentPeer {
+class StudentPeer extends BaseStudentPeer
+{
+  static public function retrieveSorted(Criteria $criteria = null, PropelPDO $con = null)
+  {
+    if (null === $criteria)
+    {
+      $criteria = new Criteria();
+    }
+
+    $criteria->addAscendingOrderByColumn(self::LAST_NAME);
+    $criteria->addAscendingOrderByColumn(self::FIRST_NAME);
+
+    return self::doSelect($criteria, $con);
+  }
 
 } // StudentPeer

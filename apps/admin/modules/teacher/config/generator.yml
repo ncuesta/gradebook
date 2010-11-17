@@ -1,0 +1,27 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           sfGuardUser
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              sfGuardUser
+    plural:                sfGuardUsers
+    route_prefix:          sf_guard_user
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+
+      list:
+        title: Teachers
+        display: [username, is_active, last_login]
+      filter:
+        class: false
+      form:    ~
+      edit:
+        title: Edit teacher information
+      new:
+        title: Add a new teacher

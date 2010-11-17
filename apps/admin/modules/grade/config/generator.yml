@@ -1,0 +1,33 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Grade
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Grade
+    plural:                Grades
+    route_prefix:          grade
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        created_at:
+          label: Date
+          date_format: P
+      list:
+        title: Grades
+        display: [grade, comments, created_at]
+        actions:
+          _new:
+          go_back:
+            label: Go back to students list
+            action: goBack
+      filter:  ~
+      form:    ~
+      edit:
+        title: Edit grade for student %%student%%
+      new:
+        title: Add a new grade

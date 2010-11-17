@@ -1,0 +1,22 @@
+<?php $last_names = array('Lopez', 'García', 'Jimenez', 'Sanchez', 'Estevez', 'Perez') ?>
+<?php $first_names = array('Jorge', 'Lucas', 'Martín', 'María', 'Eleonora', 'Roberto', 'Julián', 'Gonzalo', 'Paula') ?>
+
+Group:
+<?php foreach (range(1, count($last_names)) as $i): ?>
+  group_<?php echo $i ?>:
+    number: '<?php echo $i ?>'
+
+<?php endforeach; ?>
+
+Student:
+<?php foreach ($first_names as $j => $first_name): ?>
+<?php foreach ($last_names as $i => $last_name): ?>
+  student_<?php echo $i ?>_<?php echo $j ?>:
+    last_name: '<?php echo $last_name ?>'
+    first_name: '<?php echo $first_name ?>'
+    number: '<?php echo $i * rand(1, 50) + rand(23, 59) ?>/<?php echo $i ?>'
+    group_id: 'group_<?php echo rand(1, $i) ?>'
+
+<?php endforeach; ?>
+<?php endforeach; ?>
+

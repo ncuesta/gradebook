@@ -1,0 +1,141 @@
+html
+{
+  background-color: #fff;
+}
+
+html body
+{
+  font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#site_content
+{
+  padding: 24px;
+  background-color: #fff;
+}
+
+a
+{
+  color: #555;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #999;
+  text-decoration: underline;
+}
+
+/* Header */
+#header
+{
+  padding: 12px;
+  border-bottom: 2px ridge #ccc;
+  color: #111;
+  background: url('../images/gray_bg.png') repeat-x left top #ddd;
+}
+
+#header h1
+{
+  padding: 0;
+  margin: 0;
+  color: #000;
+  text-shadow: #fff 0 1px 0;
+}
+
+#header h1 a
+{
+  color: #000;
+}
+
+#header h1 a:hover
+{
+  text-decoration: none;
+  color: #08f;
+}
+
+#header h1 a .caption
+{
+  position: absolute;
+  display: none;
+  font-size: 9pt;
+  background-color: #08f;
+  padding: 4px;
+  border: 1px solid #07f;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  text-shadow: #03d 0 -1px 0;
+}
+
+#header h1 a:hover .caption
+{
+  display: block;
+}
+
+#header .session_info
+{
+  text-align: right;
+}
+
+/* Footer */
+#footer
+{
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-top: 1px solid #aaa;
+  background: url('../images/gray_bg.png') repeat-x left -16px #ddd;
+  padding: 3px;
+  text-align: center;
+  text-shadow: #fff 0 1px 0;
+  font-weight: bold;
+}
+
+/* Content */
+#site_content table.grades
+{
+  width: 80%;
+  margin: 0 auto;
+  background: #eee;
+}
+
+#site_content table.grades tbody tr:hover
+{
+  background-color: #fff;
+}
+
+#site_content table.grades thead tr th
+{
+  border-color: #03d;
+}
+
+#site_content table.grades tbody tr td,
+#site_content table.grades tfoot tr th
+{
+  border-color: #aaa;
+}
+
+#site_content table.grades tfoot tr th
+{
+  text-align: right;
+}
+
+#site_content table.grades thead th
+{
+  background: #08f;
+  color: #fff;
+  text-shadow: #03d 0 -1px 0;
+}
+
+#site_content .grade_comments
+{
+  border: 1px solid #ccc;
+  padding: 3px;
+  background-color: #fff;
+  display: block;
+}

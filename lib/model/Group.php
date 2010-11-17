@@ -16,6 +16,11 @@
  *
  * @package    lib.model
  */
-class Group extends BaseGroup {
+class Group extends BaseGroup
+{
+  public function __toString()
+  {
+    return strval($this->getNumber());
+  }
 
 } // Group

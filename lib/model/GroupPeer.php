@@ -16,6 +16,7 @@
  *
  * @package    lib.model
  */
-class GroupPeer extends BaseGroupPeer {
+class GroupPeer extends BaseGroupPeer
+{
 
 } // GroupPeer

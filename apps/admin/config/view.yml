@@ -6,15 +6,15 @@ default:
     content-type: text/html
 
   metas:
-    #title:        symfony project
+    title:        Gradebook | Proyecto de Software 2010 | Administración
     #description:  symfony project
     #keywords:     symfony, project
     #language:     en
     #robots:       index, follow
 
-  stylesheets:    [main.css]
+  stylesheets:    [/sfPropelPlugin/css/global.css, admin.css]
 
-  javascripts:    []
+  javascripts:    [jquery-1.4.4.min.js]
 
   has_layout:     true
   layout:         layout

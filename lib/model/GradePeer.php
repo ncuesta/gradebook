@@ -16,6 +16,7 @@
  *
  * @package    lib.model
  */
-class GradePeer extends BaseGradePeer {
+class GradePeer extends BaseGradePeer
+{
 
 } // GradePeer

@@ -11,5 +11,6 @@ class GradeFormFilter extends BaseGradeFormFilter
 {
   public function configure()
   {
+    $this->useFields(array('student_id'));
   }
 }

@@ -1,0 +1,32 @@
+generator:
+  class: sfPropelGenerator
+  param:
+    model_class:           Student
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              Student
+    plural:                Students
+    route_prefix:          student
+    with_propel_route:     1
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:  ~
+      list:
+        title: Students
+        sort: [[last_name, asc], [first_name, asc]]
+        display: [=last_name, first_name, number, group_id]
+        object_actions:
+          _edit:
+          grades:
+            action: grades
+            label: Grades
+          _delete:
+      filter:  ~
+      form:    ~
+      edit:
+        title: Edit student information
+      new:
+        title: Add a new student

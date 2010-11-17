@@ -1,0 +1,145 @@
+html
+{
+  background-color: #fff;
+}
+
+html body
+{
+  font-family: Trebuchet MS, Verdana, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#site_content
+{
+  padding: 24px;
+  background-color: #fff;
+}
+
+a
+{
+  color: #555;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color: #999;
+  text-decoration: underline;
+}
+
+/* Header */
+#header
+{
+  padding: 12px;
+  border-bottom: 2px ridge #ccc;
+  color: #111;
+  background: url('../images/gray_bg.png') repeat-x left top #ddd;
+}
+
+#header h1
+{
+  margin: -3px 0 0 0;
+  padding: 0;
+  float: left;
+  text-shadow: #fff 0 1px 0;
+}
+
+#header h1 a
+{
+  color: #000;
+}
+
+#header h1 a:hover
+{
+  text-decoration: none;
+  color: #08f;
+}
+
+#header .session_info
+{
+  text-align: right;
+}
+
+#header #gb_menu
+{
+  float: left;
+  padding: 0;
+  margin: -0.5em 0 0 25%;
+}
+
+#header #gb_menu .gb_menu_item
+{
+  list-style: none;
+  margin: 0;
+  background: url('../images/gray_bg.png') repeat-x left -10px #ddd;
+  display: inline-block;
+  border: 1px solid #aaa;
+}
+
+#header #gb_menu .gb_menu_item:hover
+{
+  background: url('../images/gray_bg.png') repeat-x left -14px #ddd;
+}
+
+#header #gb_menu .gb_menu_item a
+{
+  padding: 0.35em 1em;
+  display: block;
+  text-shadow: #fff 0 1px 0;
+  color: #111;
+}
+
+#header #gb_menu .gb_menu_item a:hover
+{
+  text-decoration: none;
+}
+
+/* Footer */
+#footer
+{
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-top: 1px solid #aaa;
+  background: url('../images/gray_bg.png') repeat-x left -16px #ddd;
+  padding: 3px;
+  text-align: center;
+  text-shadow: #fff 0 1px 0;
+  font-weight: bold;
+}
+
+/* Content */
+#sf_admin_container #sf_admin_content ul.sf_admin_td_actions li.sf_admin_action_grades a
+{
+  background-image: url('../images/grades.png');
+}
+
+#sf_admin_container #sf_admin_content ul.sf_admin_actions li.sf_admin_action_go_back a
+{
+  background-image: url('../images/back.png');
+}
+
+.hidden
+{
+  display: none;
+}
+
+#sf_admin_container .students_toggler a
+{
+  background: #08f;
+  color: #fff;
+  padding: 3px;
+  display: inline-block;
+  text-shadow: #03d 0 -1px 0;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+#sf_admin_container .students_toggler a:hover
+{
+  background: #0af;
+  text-decoration: none;
+}

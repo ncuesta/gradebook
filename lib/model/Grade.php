@@ -16,6 +16,11 @@
  *
  * @package    lib.model
  */
-class Grade extends BaseGrade {
+class Grade extends BaseGrade
+{
+  public function __toString()
+  {
+    return sprintf('%.2f', $this->getGrade());
+  }
 
 } // Grade

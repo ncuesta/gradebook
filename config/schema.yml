@@ -16,6 +16,8 @@ classes:
         required: true
       comments:
         type: longvarchar
+      created_at:
+        type: date
 
   Group:
     tableName: gb_group
@@ -38,31 +40,8 @@ classes:
         required: true
       number:
         type: varchar(15)
-  
-  StudentGroup:
-    tableName: gb_student_group
-    columns:
-      id:
-      student_id:
-        type: integer
-        foreignClass: Student
-        foreignReference: id
-        required: true
-        onDelete: cascade
       group_id:
         type: integer
         foreignClass: Group
         foreignReference: id
-        required: true
-        onDelete: cascade
-
-  Teacher:
-    tableName: gb_teacher
-    columns:
-      id:
-      first_name:
-        type: varchar(200)
-        required: true
-      last_name:
-        type: varchar(200)
-        required: true
+        onDelete: setnull
