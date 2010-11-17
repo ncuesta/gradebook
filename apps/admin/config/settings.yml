@@ -39,6 +39,8 @@ all:
     enabled_modules:        [default, sfGuardUser, sfGuardAuth]
     standard_helpers:       [Cache, Partial, I18N]
 
+    default_culture:        es
+
   .actions:
     login_module:           sfGuardAuth
     login_action:           signin

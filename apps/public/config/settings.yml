@@ -36,4 +36,6 @@ all:
 
     use_i18n:               true
 
+    default_culture:        es
+
     standard_helpers:       [Cache, Partial, I18N]
