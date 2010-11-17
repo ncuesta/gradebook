@@ -1,6 +1,4 @@
 lib/vendor/symfony/*
-log/*
-cache/*
 lib/model/om/*
 lib/model/map/*
 lib/form/base/*
