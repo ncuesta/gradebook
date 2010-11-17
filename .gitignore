@@ -1,0 +1,12 @@
+lib/vendor/symfony/*
+log/*
+cache/*
+lib/model/om/*
+lib/model/map/*
+lib/form/base/*
+lib/filter/base/*
+plugins/sfGuardPlugin/lib/model/om/*
+plugins/sfGuardPlugin/lib/model/map/*
+plugins/sfGuardPlugin/lib/form/base/*
+plugins/sfGuardPlugin/lib/filter/base/*
+web/uploads/*
